@@ -7,7 +7,7 @@ import {Quote} from './quote';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  quoteModel = new Quote('Steve Jobs', 'If you really look closely, most overnight successes took a long time.', 'Grace', '2020-8-22')
+  quoteModel = new Quote('Enter the Name of the Author', 'Enter the Quote', 'Enter your Name', 'Enter the Date');
 
   public previousAuthor : string = "Steve Jobs"
   public previousQuote: string = "If you really look closely, most overnight successes took a long time."
