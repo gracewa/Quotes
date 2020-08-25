@@ -26,7 +26,7 @@ This is a web app that allows users to submit, view and vote on quotes.
 - Typescript
 ## Setup
 - Clone the project.
-- Run the following command your terminal $ ng serve
+- Run the following command your terminal `ng serve`
 - Load this link on your web browser - http://localhost:4200/
 
 ## Technologies
