@@ -1,9 +1,10 @@
-## uotes
+## Project Name
+
+**Quotes**
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.7.
 
 ## Author
 Grace Wanene
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.7.
 
 ## DESCRIPTION
 
