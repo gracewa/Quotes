@@ -8,6 +8,7 @@ import {Quote} from './quote';
 })
 export class AppComponent {
   quoteModel = new Quote('Enter the Name of the Author', 'Enter the Quote', 'Enter your Name', 'Enter the Date');
+  previousQuote = new Quote('Steve Jobs', 'If you really look closely, most overnight successes took a long time.', 'Grace', '2020-08-23')
 
   showNew:boolean=false
 
@@ -16,7 +17,7 @@ export class AppComponent {
   }
 
   public previousAuthor : string = "Steve Jobs"
-  public previousQuote: string = "If you really look closely, most overnight successes took a long time."
+  public previousquote: string = "If you really look closely, most overnight successes took a long time."
   public previousSubmitter: string = "Grace"
   public previousDate: string = "25/08/2020"
 

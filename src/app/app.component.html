@@ -26,9 +26,9 @@
     <div class="row">
       <div class="col-md-12">
         <h2>Your Quote</h2>
-        <p>{{"Author: " + quoteModel.author | json}}</p>
         <p>{{"Quote: " + quoteModel.quote}}</p>
-        <p>{{"Submitted By: " + quoteModel.submitter + " on " + quoteModel.date}}</p>
+        <p>{{"Author: " + quoteModel.author}}</p>
+        <p>{{"Submitted by: " + quoteModel.submitter + " on " + quoteModel.date}}</p>
       <br>
 
       <div class="vote">
@@ -45,9 +45,9 @@
   <div class="row">
     <div class="col-md-12">
     <h2>Previous Quotes</h2>
-    <p>{{previousQuote}}</p>
-    <p>{{"Author: " + previousAuthor}}</p>
-    <p>{{"Submitted By: " + previousSubmitter + " on " + previousDate}}</p>
+    <p>{{previousQuote.quote}}</p>
+    <p>{{"Author: " + previousQuote.author}}</p>
+    <p>{{"Submitted by " + previousQuote.submitter + " on " + previousQuote.date}}</p>
     <br>
 
     <div class="vote">
