@@ -1,13 +1,10 @@
 <div class="container-fluid">
   <h1>Quote Submission Form</h1>
-  <br>
-  {{quoteModel | json}}
-  {{userForm.value | json}}
-  <br>
+  
   <form #userForm="ngForm">
     <div class="form-group">
       <label>Name</label>
-      <input type="text" class ="form-control" name="authorName" [(ngModel)]="quoteModel.author">
+      <input type="text" class ="form-control" name="author" [(ngModel)]="quoteModel.author">
     </div>
     <div class="form-group">
       <label>Quote</label>
@@ -28,7 +25,9 @@
   <div class="card current">
     <div class="row">
       <div class="col-md-12">
-
+        <p>{{quoteModel.author | json}}</p>
+        <p>{{"Author: " + previousAuthor}}</p>
+        <p>{{"Submitted By: " + previousSubmitter + " on " + previousDate}}</p>
       <br>
 
       <div class="vote">
