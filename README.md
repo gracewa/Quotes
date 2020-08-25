@@ -1,6 +1,38 @@
-# Tdf
+## uotes
+
+## Author
+Grace Wanene
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.7.
+
+## DESCRIPTION
+
+This is a web app that allows users to submit, view and vote on quotes.
+
+## User Story
+- User can submit quotes.
+
+- User can view previously submitted quotes.
+
+- User can upvote of downvote quotes
+
+## Pre-requisites
+
+- Node.js
+
+- Angular framework
+
+- Typescript
+## Setup
+- Clone the project.
+- Run the following command your terminal $ ng serve
+- Load this link on your web browser - http://localhost:4200/
+
+## Technologies
+-Angular 10
+-Typescript
+- Css
+- Html
 
 ## Development server
 
@@ -21,6 +53,12 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## License
+---
+
+MIT (c) 2020
+
 
 ## Further help
 
