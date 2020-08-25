@@ -9,6 +9,12 @@ import {Quote} from './quote';
 export class AppComponent {
   quoteModel = new Quote('Enter the Name of the Author', 'Enter the Quote', 'Enter your Name', 'Enter the Date');
 
+  showNew:boolean=false
+
+  toggleNew(){
+    this.showNew=!this.showNew
+  }
+
   public previousAuthor : string = "Steve Jobs"
   public previousQuote: string = "If you really look closely, most overnight successes took a long time."
   public previousSubmitter: string = "Grace"
