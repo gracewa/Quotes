@@ -22,17 +22,7 @@
   </form>
   <br>
 
-  <div class="card current" *ngIf="showNew">
-    <div class="row">
-      <div class="col-md-12">
-        <h2>Your Quote</h2>
-        <p>{{"Quote: " + quoteModel.quote}}</p>
-        <p>{{"Author: " + quoteModel.author}}</p>
-        <p>{{"Submitted by: " + quoteModel.submitter + " on " + quoteModel.date}}</p>
-      <br>
-      </div>
-    </div>
-  </div>
+  <app-quotes *ngIf="showNew"> </app-quotes>
 
   <div class="card previous">
   <div class="row">
@@ -42,13 +32,8 @@
     <p>{{"Author: " + previousQuote.author}}</p>
     <p>{{"Submitted by " + previousQuote.submitter + " on " + previousQuote.date}}</p>
     <br>
+    <app-vote> </app-vote>
 
-    <div class="vote">
-      <button (click) = "upvoteButtonClick()" class="btn btn-success" type="submit">Upvote</button>
-      {{numberOfVotes}}
-      <button (click) = "downvoteButtonClick()" class="btn btn-danger" type="submit">Downvote</button>
-      <br>
-      </div>
     </div>
   </div>
   </div>
