@@ -1,0 +1,43 @@
+<div>
+  <h1>Create a New Quote</h1>
+
+  <form #userForm="ngForm">
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" class ="form-control" name="author" [(ngModel)] = "newQuote.author" #author='ngModel' required >
+      <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+      <p>Author is Required</p>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Quote</label>
+      <textarea class="form-control" name="quote" rows="8" cols="80" [(ngModel)] = "newQuote.quote" #quote='ngModel' required></textarea>
+      <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
+      <p>Quote is Required</p>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Submitted By</label>
+      <input type="text" class ="form-control" name="submitter" [(ngModel)] = "newQuote.submitter" #submitter = 'ngModel' required>
+      <div [hidden]="submitter.valid || submitter.pristine" class="alert alert-danger">
+      <p>Your Name is Required</p>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Date</label>
+      <input type="date" class="form-control" name="date" [(ngModel)] = "newQuote.date" #date='ngModel' required>
+      <div [hidden]="date.valid || date.pristine" class="alert alert-danger">
+      <p>Date is Required</p>
+      </div>
+    </div>
+    <button class="btn btn-primary" name="button">Add Quote</button>
+  </form>
+
+  <div class="card">
+  <p>{{newQuote.quote}}</p>
+  <p>{{"Author: " + newQuote.author}}</p>
+  <p>{{"Submitted By: " + newQuote.submitter}}</p>
+  <p>{{"Date " + newQuote.date | dateCount}}</p>
+  </div>
+
+</div>

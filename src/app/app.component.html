@@ -1,41 +1,9 @@
 <div class="container-fluid">
-  <h1>Quote Submission Form</h1>
 
-  <form #userForm="ngForm">
-    <div class="form-group">
-      <label>Name</label>
-      <input type="text" class ="form-control" name="author" [(ngModel)]="quoteModel.author">
-    </div>
-    <div class="form-group">
-      <label>Quote</label>
-      <textarea class="form-control" name="quote" rows="8" cols="80" [(ngModel)]="quoteModel.quote"></textarea>
-    </div>
-    <div class="form-group">
-      <label>Submitted By</label>
-      <input type="text" class ="form-control" name="submitter" [(ngModel)]="quoteModel.submitter">
-    </div>
-    <div class="form-group">
-      <label>Date</label>
-      <input type="date" class="form-control" name="date" [(ngModel)]="quoteModel.date">
-    </div>
-    <button (click)="toggleNew()"class="btn btn-primary" name="button">Submit</button>
-  </form>
-  <br>
+  <app-quote-form> </app-quote-form>
 
-  <app-quotes *ngIf="showNew"> </app-quotes>
+  <app-quotes> </app-quotes>
 
-  <div class="card previous">
-  <div class="row">
-    <div class="col-md-12">
-    <h2>Previous Quotes</h2>
-    <p>{{previousQuote.quote}}</p>
-    <p>{{"Author: " + previousQuote.author}}</p>
-    <p>{{"Submitted by " + previousQuote.submitter + " on " + previousQuote.date}}</p>
-    <br>
-    <app-vote> </app-vote>
-
-    </div>
-  </div>
-  </div>
 </div>
+
 <router-outlet></router-outlet>

@@ -6,10 +6,6 @@ form {
   margin-top: 50px;
 }
 
-.previous, .current {
-  margin-top: 50px;
-  text-align: center;
-}
 .vote button {
   margin: 20px;
 }
