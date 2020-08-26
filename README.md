@@ -11,7 +11,7 @@ Grace Wanene
 This is a web app that allows users to submit, view and vote on quotes.
 
 ## LIVE LINK
-https://quotes-66ded.web.app/
+https://gracewa.github.io/Quotes/
 
 ## User Story
 - User can submit quotes.
