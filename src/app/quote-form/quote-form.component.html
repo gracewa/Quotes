@@ -30,12 +30,13 @@
       <p>Date is Required</p>
       </div>
     </div>
-    <button class="btn btn-primary" name="button">Add Quote</button>
+    <button (click) = 'toggleInsert()' class="btn btn-primary" name="button">Add Quote</button>
   </form>
 
-  <div class="card">
+  <div class="card" showNew:boolean=false>
+  <h2> Your Quote </h2>
   <p>{{newQuote.quote}}</p>
   <p>{{"Author: " + newQuote.author}}</p>
   <p>{{"Submitted By: " + newQuote.submitter}}</p>
-  <p>{{"Date " + newQuote.date | dateCount + "Days Ago"}</p>
+  <p>{{"Date " + newQuote.date | dateCount}}</p>
   </div>

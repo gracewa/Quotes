@@ -10,6 +10,11 @@ export class QuoteFormComponent implements OnInit {
   newQuote = new Quote("", "", "", "");
 
 
+  toggleInsert(){
+    this.newQuote.showNew=!this.newQuote.showNew
+  }
+
+
   constructor() { }
 
   ngOnInit(){

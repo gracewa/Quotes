@@ -18,6 +18,8 @@ export class QuotesComponent implements OnInit {
     this.quotes[index].showNew=!this.quotes[index].showNew
   }
 
+
+
   deleteQuote(isDelete, index){
     if (isDelete) {
       this.quotes.splice(index,1)
